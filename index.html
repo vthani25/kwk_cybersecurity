@@ -1,57 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Cyberthreats Data Visualization</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <header>
-            <h1>📈 My Tableau Data Visualization Dashboard</h1>
-            <p>Interactive insights built with Tableau — embedded in a clean website.</p>
-        </header>
+<head>
+  <meta charset="UTF8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyberthreats Data Visualization</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
 
-        <main>
-            <div class='tableauPlaceholder' id='viz1759600923483' style='position: relative'>
-                <noscript>
-                    <a href='#'>
-                        <img alt='Main Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;KW&#47;KWK_Cybersecurity_Demo_Day&#47;MainDashboard&#47;1_rss.png' 
-                        style='border: none' />
-                    </a>
-                </noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='3' /> 
-                    <param name='site_root' value='' />
-                    <param name='name' value='KWK_Cybersecurity_Demo_Day&#47;MainDashboard' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;KW&#47;KWK_Cybersecurity_Demo_Day&#47;MainDashboard&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>                
-            <script type='text/javascript'>                    
-                var divElement = document.getElementById('viz1759600923483');                    
-                var vizElement = divElement.getElementsByTagName('object')[0];                    
-                if ( divElement.offsetWidth > 800 ) 
-                    { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                else if ( divElement.offsetWidth > 500 ) 
-                    { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     
-                var scriptElement = document.createElement('script');                    
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-            </script>
-        </main>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>📈 Interactive Cyberthreats Dashboard</h1>
+      <p class="subtitle">
+        Explore global cybersecurity vulnerabilities, financial losses, and defense strategies 
+        through a Tableau dashboard with intuitive navigation and insights.
+      </p>
+      <a href="#dashboard" class="cta-btn">View Dashboard ↓</a>
+    </div>
+  </header>
 
-        <footer>
-            <p>Made with ❤️ using Tableau & GitHub Pages</p>
-        </footer>
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About the Project</h2>
+      <p>
+        This project takes complex cybersecurity data and displays it as a clear, interactive story. 
+        Users can explore data on different vulnerability types, such as social engineering, unpatched software, weak passwords, 
+        and zero-day exploits, and understand how each contributes to global cyber risk. It also highlights the financial and human toll of cyberattacks through a world map.
+      </p>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="dashboard-section">
+    <div class="container">
+      <div class="dashboard-wrapper">
+        <div class='tableauPlaceholder' id='viz1759600923483'>
+          <noscript>
+            <a href='#'>
+              <img alt='Main Dashboard' 
+                src='https://public.tableau.com/static/images/KW/KWK_Cybersecurity_Demo_Day/MainDashboard/1_rss.png' 
+                style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='KWK_Cybersecurity_Demo_Day/MainDashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/KW/KWK_Cybersecurity_Demo_Day/MainDashboard/1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+      </div>
+      <p class="caption">
+        Use the filters and toolbar to dive deeper into the data!
+      </p>
+    </div>
+  </section>
+
+  <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1759600923483');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { 
+      vizElement.style.width='1000px';
+      vizElement.style.height='827px';
+    } else if ( divElement.offsetWidth > 500 ) { 
+      vizElement.style.width='100%';
+      vizElement.style.height='700px';
+    } else { 
+      vizElement.style.width='100%';
+      vizElement.style.height='600px';
+    }                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+
+  <!-- Insights Section -->
+  <section class="insights">
+    <div class="container">
+      <h2>Key Insights</h2>
+      <ul>
+            <li>📈 <b>Social Engineering is the most reported vulnerability</b>, making up the largest portion of incidents in the dataset, followed closely by unpatched software and weak passwords.</li>
+            <li>🌍 <b>Financial losses are unevenly distributed across regions</b> — a small number of countries account for a disproportionate share of global cyberattack losses, indicating concentrated high-impact activity.</li>
+            <li>🔸 <b>Zero-day vulnerabilities occur less frequently</b>, but their presence highlights ongoing exposure to sophisticated, less detectable threats.</li>
+            <li>⏳ <b>Unpatched software incidents showed a sharp increase between 2020 and 2023</b>, aligning with the remote work transition period and reduced IT patching capacity.</li>
+            <li>🛡️ <b>Defense mechanisms are not evenly adopted</b> — traditional tools like antivirus and firewalls remain dominant, while AI-based detection shows lower representation, suggesting slower adoption of newer technologies.</li>
+            <li>💰 <b>Regions with higher financial losses often overlap with higher counts of specific vulnerabilities</b>, indicating a possible relationship between attack types and economic impact.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Made with ❤️ using Tableau & GitHub Pages | 
+      <a href="https://public.tableau.com/app/profile/thanishkka.vijayabaskar/viz/KWK_Cybersecurity_Demo_Day/MainDashboard#1" target="_blank">
+        View on Tableau Public
+      </a>
+    </p>
+  </footer>
+
 </body>
 </html>
