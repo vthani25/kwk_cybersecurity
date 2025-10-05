@@ -10,24 +10,43 @@ html {
 }
 
 body {
-  font-family: "Inter", "Segoe UI", sans-serif;
-  color: #333;
-  background: #f7f8fa;
-  line-height: 1.6;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  background: #0a0f1c;
+  color: #e4e8ff;
+  line-height: 1.7;
 }
 
-
+/* ========== HERO ========== */
 .hero {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
+  background: radial-gradient(circle at 50% 50%, #0d1835, #050811 80%);
   text-align: center;
-  padding: 6rem 1rem 5rem;
+  padding: 7rem 1rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(#00e5ff 0deg, transparent 120deg, #0f0 240deg, transparent 360deg);
+  opacity: 0.15;
+  animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00e5ff;
 }
 
 .hero .subtitle {
@@ -35,25 +54,27 @@ body {
   max-width: 700px;
   margin: 0 auto 2rem;
   opacity: 0.9;
+  color: #b8c0ff;
 }
 
 .cta-btn {
   display: inline-block;
-  background: #fff;
-  color: #2575fc;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
+  background: linear-gradient(90deg, #00e5ff, #00ffa3);
+  color: #000;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .cta-btn:hover {
-  background: #e8e8e8;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.1);
 }
 
-/* ========== SECTION BASE ========== */
+/* ========== SECTIONS ========== */
 section {
   padding: 4rem 1rem;
 }
@@ -63,55 +84,72 @@ section {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #222;
+/* ========== ABOUT ========== */
+.about {
+  background: #0d1225;
+  border-top: 1px solid #1f2b52;
+  border-bottom: 1px solid #1f2b52;
 }
 
-/* ========== ABOUT SECTION ========== */
-.about p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.about h2 {
   text-align: center;
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  text-align: center;
+  color: #c2c8f0;
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
 }
 
 /* ========== DASHBOARD SECTION ========== */
 .dashboard-section {
-  background: #fff;
+  background: linear-gradient(135deg, #071029, #091530);
 }
 
 .dashboard-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
-  width: 100%;
+  margin: 2rem 0;
 }
 
 .tableauPlaceholder {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   max-width: 1000px;
-  min-height: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
 }
 
 .tableauPlaceholder object {
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 .caption {
   text-align: center;
-  font-size: 1.1rem;
-  color: #444444;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+  color: #a7b1e3;
 }
 
-
 /* ========== INSIGHTS SECTION ========== */
+.insights {
+  background: #0a1022;
+}
+
+.insights h2 {
+  text-align: center;
+  color: #00ffa3;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
 .insights ul {
   list-style: none;
   max-width: 800px;
@@ -119,28 +157,31 @@ h2 {
 }
 
 .insights li {
-  background: #fff;
-  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00e5ff;
+  margin: 0.8rem 0;
   padding: 0.8rem 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
 }
 
 .insights li:hover {
-  transform: translateX(10px);
+  transform: translateX(8px);
 }
 
+/* ========== FOOTER ========== */
 footer {
-  background: #222;
-  color: #bbb;
+  background: #050811;
+  color: #7681b8;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  border-top: 1px solid #1a2144;
 }
 
 footer a {
-  color: #6a9bff;
+  color: #00e5ff;
   text-decoration: none;
 }
 
@@ -151,14 +192,6 @@ footer a:hover {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.9rem;
-  }
-
-  .dashboard-wrapper iframe {
-    height: 60vh;
-  }
-
-  section {
-    padding: 3rem 1rem;
+    font-size: 2.1rem;
   }
 }
