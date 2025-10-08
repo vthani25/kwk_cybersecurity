@@ -1,39 +1,21 @@
-# 📈 Cyberthreats Data Visualization Dashboard
+# Cyberthreats Dashboard
 
-This project is an interactive Tableau dashboard embedded into a website that explores global cybersecurity vulnerabilities, their financial impact, and patterns in attack vectors. It turns complex cybersecurity data into an accessible, visual story that can be navigated and understood by a broad audience.
+This project is a Tableau dashboard embedded on a website that shows global cybersecurity threats and their impact. It turns complex data about attacks like social engineering, weak passwords, unpatched software, and zero-day exploits into a format that’s easier to explore and understand.
 
-## 🌐 What the Project Does
-The dashboard visualizes data on different types of cybersecurity vulnerabilities including social engineering, unpatched software, weak passwords, and zero-day exploits and connects them to **real world impacts**.  
-Through interactive maps, charts, and filters, users can:
-- Explore where cyberattacks have the most impact globally  
-- Analyze which vulnerabilities are most common and costly  
-- See how different attack types contribute to overall cyber risk  
-- Navigate between dashboard sections to view specific aspects of the data
+## Purpose and Why I Made It
 
-The Tableau dashboard is fully embedded in a responsive website, which provides contextual information and a smoother user experience than sharing Tableau alone.
+I created this dashboard during the Kode With Klossy Summer Program. Cybersecurity data can be difficult to read and interpret, so I wanted to make a simple, interactive way for students, organizations, and anyone interested to explore trends and see where cyber risks are highest. The goal was to combine visual storytelling with data analysis so that users can learn more about patterns in attacks and vulnerabilities.
 
-## 💡 Why I Made It
-Cybersecurity data can be dense and technical. I wanted to make it visually engaging and intuitive, so that students, organizations, and policymakers could quickly grasp patterns and insights. Embedding it into a website allowed me to pair the visuals with clear explanations and navigation, making the data tell a story.
+## How I Built It
 
-## 🛠 How I Made It
-- **Data Visualization:** Built entirely in Tableau, using multiple dashboard sheets, filters, and interactive buttons to create a cohesive flow.  
-- **Design Principles:** Focused on clean layout, consistent color schemes, and data storytelling to guide users through insights step by step.  
-- **Website Integration:** Wrote custom HTML and CSS to embed the Tableau visualization, style the page, and add sections like “About” and “Key Insights” for extra context.  
-- **Deployment:** Hosted the site through GitHub Pages for easy public access.
+The dashboards were created in Tableau using interactive charts, maps, and filters. I used Kaggle to find my dataset: https://www.kaggle.com/datasets/atharvasoundankar/global-cybersecurity-threats-2015-2024. I then embedded the completed dashboard into a website using simple HTML and CSS. This allowed viewers to explore the data without feeling overwhelmed and made the visualizations accessible on different screen sizes.
 
-## 📊 What I Learned
-Working on this project strengthened my skills in:
-- Designing layered Tableau dashboards that balance interactivity with clarity  
-- Structuring data to support meaningful visual narratives  
-- Embedding Tableau visualizations into a website and ensuring responsive display  
-- Thinking critically about how to present insights, not just data
+## Challenges and Learnings
 
-## 🚧 Challenges
-One major challenge was making sure the navigation was clear for all users, and flowed correctly between the pages created by different team members. It was also a learning experience to figure out how to embed Tableau into a website and have it be responsive.
+One challenge was embedding Tableau while keeping the dashboard responsive on the website. I learned how to structure dashboards clearly and integrate data visualizations into a website. In terms of the dashboard itself, it was difficult to find a good dataset and set up navigation through Tableau. This project overall also helped me practice thinking critically about how to present data in a way that tells a story, not just displays numbers.
 
----
+## Future Improvements
 
-✨ **Live Demo:** [View the Dashboard](https://public.tableau.com/app/profile/thanishkka.vijayabaskar/viz/KWK_Cybersecurity_Demo_Day/MainDashboard#1)  
-🌍 **Website Version:** [View the Website! ](https://vthani25.github.io/kwk_cybersecurity/) Hosted with GitHub Pages, includes additional project context and styling. 
+In the future, I plan to make the dashboard even more interactive to help users learn from the data and add additional cybersecurity resources to make it more educational(maybe even a blog)!
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
