@@ -1,0 +1,58 @@
+body {
+  margin: 13;
+  padding: 5;
+  background: radial-gradient(circle at 20% 20%, #001f3f, #000);
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  color: #aeeaff;
+}
+
+.main {
+  background-color: #ffffff1f; 
+  padding: 30px 40px;     
+  border-radius: 10px;     
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 90vw;              
+  margin: 30px auto;              
+}
+
+h1{
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 10px;
+  text-decoration: line;
+}
+
+h2 {
+  color: #20cefe;
+  margin-top: 25px;
+}
+p {
+  margin-bottom: 15px;
+}
+
+/* make navbar like buttons */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: none;
+  background: rgba(0, 30, 60, 0.45);
+  border: 1px solid rgba(0, 255, 255, 0.10);
+  border-radius: 12px;
+}
+
+
+.nav-btn:hover{
+  color: var(--accent);
+  border-color: rgba(0, 255, 255, 0.75);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 188, 212, 0.14);
+}
+
+.nav-btn:active {
+  transform: translateY(-1px) scale(0.9);
+}

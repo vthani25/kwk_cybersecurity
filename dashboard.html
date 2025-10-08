@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF8"/>
+  <title>Cyberthreats Data Visualization</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+  <div class="nav-buttons">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn" href="about.html">About</a>
+      <a class="nav-btn" href="dashboard.html">Dashboard</a>
+  </div>
+
+  <h2>Dashboard and Data!</h2>
+  <div class="container">
+  <div class="dashboard">
+      <div class='tableauPlaceholder' id='viz1759600923483'>
+          <noscript>
+            <a href='#'>
+              <img alt='Main Dashboard' 
+                src='https://public.tableau.com/static/images/KW/KWK_Cybersecurity_Demo_Day/MainDashboard/1_rss.png' 
+                style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='KWK_Cybersecurity_Demo_Day/MainDashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/KW/KWK_Cybersecurity_Demo_Day/MainDashboard/1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+      </div>
+
+      <div class="insights">
+        <h2> Insights </h2>
+          <ul>
+                <li>Social Engineering is the most reported vulnerability</b>, making up the largest portion of incidents in the dataset, followed closely by unpatched software and weak passwords.</li>
+                <li>Financial losses are unevenly distributed across regions. </b> A small number of countries account for a disproportionate share of global cyberattack losses. This indicates concentrated high-impact activity.</li>
+                <li>Unpatched software incidents showed a sharp increase between 2020 and 2023</b>. This aligns with the remote work transition period due to quarantine and reduced IT patching capacity during that time.</li>
+                <li>Defense mechanisms are not evenly adopted. </b> Traditional tools like antivirus and firewalls remain dominant, while AI-based detection shows lower representation. 
+                  This could suggest that newer technologies are being adapted at a slower pace, or that cybersecurity is not at risk by AI.</li>
+          </ul>
+      </div>
+
+  <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1759600923483');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { 
+      vizElement.style.width='1000px';
+      vizElement.style.height='827px';
+    } else if ( divElement.offsetWidth > 500 ) { 
+      vizElement.style.width='100%';
+      vizElement.style.height='700px';
+    } else { 
+      vizElement.style.width='100%';
+      vizElement.style.height='600px';
+    }                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+  </div>  
+
+</body>
+</html>
